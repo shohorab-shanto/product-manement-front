@@ -75,7 +75,7 @@ const CreateCategory = ({ open, onCloseModal, getCategory }) => {
             </div>
 
             <div className="form-group mt-5">
-              <label className="required form-label">Category Parent</label>
+              <label className="form-label">Category Parent</label>
               <Select
                 options={category}
                 onChange={handleSelect}
