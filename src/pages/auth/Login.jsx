@@ -77,11 +77,11 @@ const Login = () => {
                 className="fw-bolder fs-2qx pb-5 pb-md-10"
                 style={{ color: "#986923" }}
               >
-                Welcome to NAF Inventory
+                Welcome to Product Management
               </h1>
 
               <p className="fw-bold fs-2" style={{ color: "#986923" }}>
-                Naf Group is one of the most prestigious and experienced
+                This is one of the most prestigious and experienced
                 commercial and industrial conglomerates in Bangladesh today
               </p>
             </div>

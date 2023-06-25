@@ -202,7 +202,7 @@ const Dashboard = () => {
         </Col>
       </Row>
       <br />
-      <Row>
+      {/* <Row>
         <Col xl={8}>
           <ScrollableTable
             headers={stockAlert.headers}
@@ -243,7 +243,7 @@ const Dashboard = () => {
             title="Top 5 Customers"
           />
         </Col>
-      </Row>
+      </Row> */}
       <br />
     </div>
   );

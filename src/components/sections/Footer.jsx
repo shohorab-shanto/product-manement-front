@@ -4,10 +4,10 @@ const Footer = () => {
     <div className="footer py-4 d-flex flex-lg-column" id="footer">
       <div className="container-fluid d-flex flex-column flex-md-row align-items-center justify-content-between">
         <div className="text-dark order-2 order-md-1">
-          <span className="text-muted fw-bold me-1">2022©</span>
+          <span className="text-muted fw-bold me-1">2023©</span>
           <span
             className="text-gray-800 text-hover-primary"
-          >NAF Inventory</span>
+          >Product Management</span>
         </div>
         <ul className="menu menu-gray-600 menu-hover-primary fw-bold order-1">
           <li className="menu-item">

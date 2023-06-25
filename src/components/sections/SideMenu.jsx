@@ -152,102 +152,7 @@ const SideMenu = () => {
             <div className="menu-item">
               <div className="menu-content pt-8 pb-2">
                 <span className="menu-section text-muted text-uppercase fs-8 ls-1">
-                  User manegement
-                </span>
-              </div>
-            </div>
-            <PermissionAbility permission="employees_access">
-              <div className="menu-item">
-                <NavLink
-                  className={(navinfo) =>
-                    navinfo.isActive ? "menu-link active" : "menu-link"
-                  }
-                  to="/panel/employees"
-                >
-                  <span className="menu-icon">
-                    <i className="fa fa-users"></i>
-                  </span>
-                  <span className="menu-title">Employees</span>
-                </NavLink>
-              </div>
-            </PermissionAbility>
-
-            <PermissionAbility permission="designations_access">
-              <div className="menu-item">
-                <NavLink
-                  className={(navinfo) =>
-                    navinfo.isActive ? "menu-link active" : "menu-link"
-                  }
-                  to="/panel/designations"
-                >
-                  <span className="menu-icon">
-                    <i className="fa fa-sitemap"></i>
-                  </span>
-                  <span className="menu-title">Designations</span>
-                </NavLink>
-              </div>
-            </PermissionAbility>
-
-            <PermissionAbility permission="roles_access">
-              <div className="menu-item">
-                <NavLink
-                  className={(navinfo) =>
-                    navinfo.isActive ? "menu-link active" : "menu-link"
-                  }
-                  to="roles"
-                >
-                  <span className="menu-icon">
-                    <i className="fa fa-user-shield"></i>
-                  </span>
-                  <span className="menu-title">Roles</span>
-                </NavLink>
-              </div>
-            </PermissionAbility>
-
-            <div className="menu-item">
-              <div className="menu-content pt-8 pb-2">
-                <span className="menu-section text-muted text-uppercase fs-8 ls-1">
-                  Customers
-                </span>
-              </div>
-            </div>
-
-            <PermissionAbility permission="companies_access">
-              <div className="menu-item">
-                <NavLink
-                  className={(navinfo) =>
-                    navinfo.isActive ? "menu-link active" : "menu-link"
-                  }
-                  to="companies"
-                >
-                  <span className="menu-icon">
-                    <i className="fa fa-building"></i>
-                  </span>
-                  <span className="menu-title">Companies</span>
-                </NavLink>
-              </div>
-            </PermissionAbility>
-
-            <PermissionAbility permission="contracts_access">
-              <div className="menu-item">
-                <NavLink
-                  className={(navinfo) =>
-                    navinfo.isActive ? "menu-link active" : "menu-link"
-                  }
-                  to="contracts"
-                >
-                  <span className="menu-icon">
-                    <i className="bi bi-sticky fs-3"></i>
-                  </span>
-                  <span className="menu-title">Contracts</span>
-                </NavLink>
-              </div>
-            </PermissionAbility>
-
-            <div className="menu-item">
-              <div className="menu-content pt-8 pb-2">
-                <span className="menu-section text-muted text-uppercase fs-8 ls-1">
-                  Inventory
+                  Product manegement
                 </span>
               </div>
             </div>
@@ -258,235 +163,63 @@ const SideMenu = () => {
                   className={(navinfo) =>
                     navinfo.isActive ? "menu-link active" : "menu-link"
                   }
-                  to="/panel/warehouses"
+                  to="/panel/categories"
                 >
                   <span className="menu-icon">
                     <i className="fas fa-warehouse"></i>
                   </span>
-                  <span className="menu-title">Warehouses</span>
+                  <span className="menu-title">Category</span>
                 </NavLink>
               </div>
             </PermissionAbility>
-            <PermissionAbility permission="box_heading_access">
+
+            <PermissionAbility permission="warehouses_access">
               <div className="menu-item">
                 <NavLink
                   className={(navinfo) =>
                     navinfo.isActive ? "menu-link active" : "menu-link"
                   }
-                  to="/panel/box-headings"
+                  to="/panel/attributes"
                 >
                   <span className="menu-icon">
-                    <i className="fas fa-box"></i>
+                    <i className="fas fa-warehouse"></i>
                   </span>
-                  <span className="menu-title">Box Headings</span>
+                  <span className="menu-title">Attributes</span>
                 </NavLink>
               </div>
             </PermissionAbility>
-            <PermissionAbility permission="machines_access">
+
+            <PermissionAbility permission="warehouses_access">
               <div className="menu-item">
                 <NavLink
                   className={(navinfo) =>
                     navinfo.isActive ? "menu-link active" : "menu-link"
                   }
-                  to="/panel/machines"
+                  to="/panel/attribute-value"
                 >
                   <span className="menu-icon">
-                    <i className="fas fa-cogs"></i>
+                    <i className="fas fa-warehouse"></i>
                   </span>
-                  <span className="menu-title">Machines</span>
+                  <span className="menu-title">Attribute Value</span>
                 </NavLink>
               </div>
             </PermissionAbility>
 
-            <PermissionAbility permission="parts_access">
+            <PermissionAbility permission="warehouses_access">
               <div className="menu-item">
                 <NavLink
                   className={(navinfo) =>
                     navinfo.isActive ? "menu-link active" : "menu-link"
                   }
-                  to="/panel/parts"
+                  to="/panel/products"
                 >
                   <span className="menu-icon">
-                    <i className="fas fa-tools"></i>
+                    <i className="fas fa-warehouse"></i>
                   </span>
-                  <span className="menu-title">Parts</span>
+                  <span className="menu-title">Products</span>
                 </NavLink>
               </div>
             </PermissionAbility>
-
-            <div className="menu-item">
-              <div className="menu-content pt-8 pb-2">
-                <span className="menu-section text-muted text-uppercase fs-8 ls-1">
-                  Sales
-                </span>
-              </div>
-            </div>
-
-            <PermissionAbility permission="requisitions_access">
-              <div className="menu-item">
-                <NavLink
-                  className={(navinfo) =>
-                    navinfo.isActive ? "menu-link active" : "menu-link"
-                  }
-                  to="requisitions"
-                >
-                  <span className="menu-icon">
-                    <i className="fas fa-tools"></i>
-                  </span>
-                  <span className="menu-title">Requisitions</span>
-                </NavLink>
-              </div>
-            </PermissionAbility>
-
-            <PermissionAbility permission="requisitions_access">
-              <div className="menu-item">
-                <NavLink
-                  className={(navinfo) =>
-                    navinfo.isActive ? "menu-link active" : "menu-link"
-                  }
-                  to="require_req"
-                >
-                  <span className="menu-icon">
-                    <i className="fas fa-tools"></i>
-                  </span>
-                  <span className="menu-title">Required Requisitions</span>
-                </NavLink>
-              </div>
-            </PermissionAbility>
-
-            <PermissionAbility permission="quotations_access">
-              <div className="menu-item">
-                <NavLink
-                  className={(navinfo) =>
-                    navinfo.isActive ? "menu-link active" : "menu-link"
-                  }
-                  to="quotations"
-                >
-                  <span className="menu-icon">
-                    <i className="fas fa-money-bill"></i>
-                  </span>
-                  <span className="menu-title">Quotations</span>
-                </NavLink>
-              </div>
-            </PermissionAbility>
-
-            <PermissionAbility permission="invoices_access">
-              <div className="menu-item">
-                <NavLink
-                  className={(navinfo) =>
-                    navinfo.isActive ? "menu-link active" : "menu-link"
-                  }
-                  to="invoices"
-                >
-                  <span className="menu-icon">
-                    <i className="fa fa-credit-card"></i>
-                  </span>
-                  <span className="menu-title">Invoices</span>
-                </NavLink>
-              </div>
-            </PermissionAbility>
-
-            <PermissionAbility permission="deliverynotes_access">
-              <div className="menu-item">
-                <NavLink
-                  className={(navinfo) =>
-                    navinfo.isActive ? "menu-link active" : "menu-link"
-                  }
-                  to="delivery-notes"
-                >
-                  <span className="menu-icon">
-                    <i className="fa fa-sticky-note"></i>
-                  </span>
-                  <span className="menu-title">Delivery Notes</span>
-                </NavLink>
-              </div>
-            </PermissionAbility>
-            
-            <PermissionAbility permission="gate_pass_access">
-            <div className="menu-item">
-                <NavLink
-                  className={(navinfo) =>
-                    navinfo.isActive ? "menu-link active" : "menu-link"
-                  }
-                  to="gate-passes"
-                >
-                  <span className="menu-icon">
-                    <i className="fa fa-truck"></i>
-                  </span>
-                  <span className="menu-title">Gate Passes</span>
-                </NavLink>
-              </div>
-            </PermissionAbility>
-            
-
-            <div className="menu-item">
-              <div className="menu-content">
-                <div className="separator mx-1 my-2"></div>
-              </div>
-            </div>
-
-            {/* For Reports */}
-
-            <div className="menu-item">
-              <div className="menu-content pt-8 pb-2">
-                <span className="menu-section text-muted text-uppercase fs-8 ls-1">
-                  Reports
-                </span>
-              </div>
-            </div>
-
-            <PermissionAbility permission="sales_report_access">
-            <div className="menu-item">
-              <NavLink
-                className={(navinfo) =>
-                  navinfo.isActive ? "menu-link active" : "menu-link"
-                }
-                to="reports"
-              >
-                <span className="menu-icon">
-                  <i className="fa fa-sticky-note"></i>
-                </span>
-                <span className="menu-title">Sales Report</span> 
-              </NavLink>
-            </div>
-            </PermissionAbility>
-            
-            <PermissionAbility permission="stock_report_access">
-            <div className="menu-item">
-              <NavLink
-                className={(navinfo) =>
-                  navinfo.isActive ? "menu-link active" : "menu-link"
-                }
-                to="part-stock-report"
-              >
-                <span className="menu-icon">
-                  <i className="fa fa-sticky-note"></i>
-                </span>
-                <span className="menu-title">Stock Report</span>
-              </NavLink>
-            </div>
-            </PermissionAbility>
-            
-
-            <div className="menu-item">
-              <div className="menu-content">
-                <div className="separator mx-1 my-2"></div>
-              </div>
-            </div>
-
-            <div className="menu-item">
-              <NavLink
-                className={(navinfo) =>
-                  navinfo.isActive ? "menu-link active" : "menu-link"
-                }
-                to="/panel/settings"
-              >
-                <span className="menu-icon">
-                  <i className="fas fa-cog"></i>
-                </span>
-                <span className="menu-title">Settings</span>
-              </NavLink>
-            </div>
           </div>
         </div>
       </div>
